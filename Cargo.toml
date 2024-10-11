@@ -1,0 +1,13 @@
+[package]
+name = "num-complex-simd-comparison"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+criterion = "0.5.1"
+num-complex = {git = "https://github.com/michaelciraci/num-complex", branch = "simd", features = ["rand"]}
+rand = "*"
+
+[[bench]]
+name = "simd_test"
+harness = false
